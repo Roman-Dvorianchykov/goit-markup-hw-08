@@ -1,0 +1,83 @@
+@import './utils/variables';
+
+@import './base/normalize';
+@import './base/fonts';
+
+
+@import './components/page_header';
+@import './components/logo';
+@import './components/hero';
+@import './components/button';
+@import './components/features';
+@import './components/device';
+@import './components/our_team';
+@import './components/regular_clients';
+
+@import './components/page_footer';
+@import './components/modal_window';
+
+
+
+@import './components/our_works_button';
+@import './components/our_works';
+
+
+
+
+
+
+
+body{
+    background-color: #ffffff;
+    font-family: var(--primary-text-font), sans-serif;
+    color: var(--primary-text-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin: auto;
+}
+
+h2,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+button {
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+footer {
+    background-color: #2F303A;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    /* outline: 2px solid teal; */
+    padding: 0 15px;
+}
