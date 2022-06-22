@@ -20,11 +20,14 @@
                     Web
                     <span class="logo-accent">Studio</span>
                 </a>
-                <button type="button" class="menu__button">
+                
+                <!-- <button type="button" class="menu__button" aria-expanded="false" 
+                    data-menu-button>
                     <svg class="menu__icon" 
                         width="40" 
                         height="40" 
-                        aria-label="Переключатель мобильного меню">
+                        aria-label="Переключатель мобильного меню"
+                        aria-controls="menu-container">
                         <use class="icon-menu" 
                             href=".\images\symbol-defs.svg#icon-menu"> 
                         </use>   
@@ -32,41 +35,41 @@
                             href=".\images\symbol-defs.svg#icon-close-black">
                         </use>
                     </svg>
-
-                </button>
-                    <!-- <nav class="site-nav">-->
-                <ul class="site-nav__list">
-                    <li class="site-nav__item">
-                        <a href="./index.html" class="header-link header-link--current">Студия</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a href="./portfolio.html" class="header-link">Портфолио</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a href="" class="header-link">Контакты</a>
-                    </li>
-                </ul>
-                </nav>
-                <ul class="auth-nav__list">
-                    <li class="auth-nav__item">
-                        <a href="mailto:info@devstudio.com" class="auth-nav__link header-link mailto">
-                            <svg class="icon mailto" width="16" height="12">
-                                <use href=".\images\symbol-defs.svg#icon-mailto">
-                                </use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="auth-nav_item">
-                        <a href="tel:+380961111111" class="auth-nav__link header-link tel">
-                            <svg class="icon smartphone" width="10" height="16">
-                                <use href=".\images\symbol-defs.svg#icon-smartphone">
-                                </use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+                </button> -->
+                
+                <!-- <div class="menu-container" id="menu-container" data-menu> -->
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="header-link header-link--current">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="header-link">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="header-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="auth-nav__list">
+                        <li class="auth-nav__item">
+                            <a href="mailto:info@devstudio.com" class="auth-nav__link header-link mailto">
+                                <svg class="icon mailto" width="16" height="12">
+                                    <use href=".\images\symbol-defs.svg#icon-mailto">
+                                    </use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>   
+                        <li class="auth-nav__item">
+                            <a href="tel:+380961111111" class="auth-nav__link header-link tel">
+                                <svg class="icon smartphone" width="10" height="16">
+                                    <use href=".\images\symbol-defs.svg#icon-smartphone">
+                                    </use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                <!-- </div>     -->
             </header>
         </div>
     </div>
@@ -524,4 +527,5 @@
     </div>
    
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>

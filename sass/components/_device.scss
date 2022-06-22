@@ -6,8 +6,16 @@
     padding: 0;
     margin: 0;
     position: relative;
+
+   
 }
 
+.device.section{
+    @media screen and (max-width: $desktop) {
+            display: none;
+    
+    }
+}
 
 .device__description {
     position: absolute;

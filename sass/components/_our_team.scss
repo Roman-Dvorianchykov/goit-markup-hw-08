@@ -5,6 +5,10 @@
     margin-bottom: 0;
 
     padding: 0;
+
+    @media screen and (max-width: $smartphone){
+        display: block;
+    }
 }
 
 .our-team.section {
@@ -44,6 +48,17 @@
     border-radius: 0px 0px 4px 4px;
     margin: 0 15px;
     background-color: #fff;
+
+    @media screen and (max-width: $smartphone) {
+        margin: 0 auto;
+        }
+
+    & img{
+
+        @media screen and (max-width: $smartphone) {
+                margin: 0 auto;
+            }
+    }
 }
 
 
@@ -60,6 +75,7 @@
     margin: 0;
     margin-top: 30px;
     margin-bottom: 10px;
+    
 }
 
 .our-team__function {
@@ -79,6 +95,10 @@
     display: flex;
     padding: 0 27px 30px 27px;
     margin: 0;
+
+    @media screen and (max-width: $smartphone) {
+          justify-content: center;
+        }
 }
 
 .socials__link {

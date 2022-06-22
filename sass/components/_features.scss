@@ -12,8 +12,23 @@
     margin-top: 0;
     margin-left: 0;
     padding-left: 0;
-    width: 270px;
-    /* outline-color: 1px solid teal; */
+    min-width: 270px;
+    outline-color: 1px solid teal; 
+
+
+    @media screen and (max-width: $smartphone){
+    display: block;
+    margin: 0 auto;
+       
+        
+    }
+
+}
+
+.features__item {
+    @media screen and (max-width: $smartphone) {
+            margin: 0 auto;
+    }
 }
 
 .features__item:not(:last-child) {
@@ -29,6 +44,11 @@
 
     padding: 0;
     margin: 30px 0 0 0;
+
+    @media screen and (max-width: $tablet) {
+            text-align: center;
+    
+        }
 }
 
 .features__icon {
@@ -37,8 +57,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    width: 270px;
+    min-width: 270px;
     height: 120px;
+
+    // @media screen and (max-width: $tablet) {
+    //        margin: 0 auto;
+    //         width: 100%;
+    
+    //     }
 }
 
 
@@ -53,4 +79,6 @@
     min-height: 75px;
     min-width: 270px;
     margin-top: 10px;
+
+    
 }

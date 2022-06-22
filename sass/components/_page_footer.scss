@@ -5,6 +5,15 @@
 
 .footer.container {
     display: flex;
+
+    @media screen and (max-width: $smartphone){
+        flex-direction: column;
+        margin: 0;
+
+    & div:not(:last-child){
+        margin:0 auto 60px;
+    }
+    }
 }
 
 .footer__logo--accent {
@@ -17,11 +26,25 @@
     padding: 0;
     margin-bottom: 20px;
     margin-right: 0px;
+
+    @media screen and (max-width: $smartphone) {
+            display: flex;
+            justify-content: center;
+}
+}
+
+.contacts__list{
+    @media screen and (max-width: $smartphone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
 }
 
 .contacts__item:not(:last-child) {
     margin-top: 0px;
     margin-bottom: 9px;
+
 }
 
 .contacts__link {
@@ -70,6 +93,13 @@
 
 .footer__subscribe {
     margin-left: 93px;
+
+    @media screen and(max-width: $smartphone){
+        margin: 0;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
 }
 
 .footer__title {
@@ -80,11 +110,24 @@
     text-transform: uppercase;
     color: #ffffff;
 
+    @media screen and (max-width: $smartphone){
+        justify-content: center;
+        display: flex;
+    }
+
 }
 
 
 .footer__form {
     display: flex;
+
+    @media screen and (max-width: $smartphone){
+        flex-direction: column;
+
+        & :not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .socials__list.footer {
