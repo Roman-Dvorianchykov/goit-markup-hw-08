@@ -8,32 +8,59 @@
 
 .features__list {
     display: flex;
+    justify-content: center;
+
     margin-bottom: 0;
     margin-top: 0;
     margin-left: 0;
     padding-left: 0;
     min-width: 270px;
-    outline-color: 1px solid teal; 
+    outline-color: 1px solid teal;
 
 
-    @media screen and (max-width: $smartphone){
-    display: block;
-    margin: 0 auto;
-       
-        
+    @media screen and (max-width: $smartphone) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
+    @media screen and (max-width: $desktop) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
+
 
 .features__item {
-    @media screen and (max-width: $smartphone) {
-            margin: 0 auto;
+    width: 354px;
+
+    @media screen and (min-width: $desktop) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 30px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        margin: 0 30px 30px 0;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
     }
 }
 
-.features__item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .features__title {
     font-weight: 700;
@@ -46,9 +73,9 @@
     margin: 30px 0 0 0;
 
     @media screen and (max-width: $tablet) {
-            text-align: center;
-    
-        }
+        text-align: center;
+
+    }
 }
 
 .features__icon {
@@ -63,7 +90,7 @@
     // @media screen and (max-width: $tablet) {
     //        margin: 0 auto;
     //         width: 100%;
-    
+
     //     }
 }
 
@@ -80,5 +107,5 @@
     min-width: 270px;
     margin-top: 10px;
 
-    
+
 }

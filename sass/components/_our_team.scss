@@ -6,8 +6,17 @@
 
     padding: 0;
 
-    @media screen and (max-width: $smartphone){
+    @media screen and (max-width: $smartphone) {
         display: block;
+
+    }
+
+    @media screen and (max-width: $desktop) {
+        // flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+
     }
 }
 
@@ -46,18 +55,36 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin: 0 15px;
+    margin: 0 30px 0 0;
     background-color: #fff;
+    display: block;
 
-    @media screen and (max-width: $smartphone) {
-        margin: 0 auto;
+    & :last-child {
+        margin: 0;
+    }
+
+
+    @media screen and (max-width: $tablet) {
+        margin: 0 auto 30px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        margin: 0 30px 30px 0;
+
+        &:nth-child(2n) {
+            margin-right: 0;
         }
 
-    & img{
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+
+    & img {
 
         @media screen and (max-width: $smartphone) {
-                margin: 0 auto;
-            }
+            margin: 0 auto;
+        }
     }
 }
 
@@ -75,7 +102,7 @@
     margin: 0;
     margin-top: 30px;
     margin-bottom: 10px;
-    
+
 }
 
 .our-team__function {
@@ -95,10 +122,11 @@
     display: flex;
     padding: 0 27px 30px 27px;
     margin: 0;
+    justify-content: center;
 
     @media screen and (max-width: $smartphone) {
-          justify-content: center;
-        }
+        justify-content: center;
+    }
 }
 
 .socials__link {
@@ -109,15 +137,14 @@
     border-radius: 50%;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-        }
-    
-        &:hover svg,
-        &:focus svg {
-            fill: #ffffff;
-        }
-}
 
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+    &:hover svg,
+    &:focus svg {
+        fill: #ffffff;
+    }
+}

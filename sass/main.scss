@@ -27,7 +27,7 @@
 
 
 
-body{
+body {
     background-color: #ffffff;
     font-family: var(--primary-text-font), sans-serif;
     color: var(--primary-text-color);
@@ -76,8 +76,17 @@ address {
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
-    
+    width: 100%;
+    max-width: 480px;
+
     /* outline: 2px solid teal; */
     padding: 0 15px;
+
+    @media screen and(min-width: $tablet) {
+        max-width: 768px;
+    }
+
+    @media screen and(min-width: $desktop) {
+        max-width: 1200px;
+    }
 }
