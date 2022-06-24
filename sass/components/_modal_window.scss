@@ -20,8 +20,9 @@
 
 .modal {
     position: absolute;
+    z-index: 10;
     display: flexbox;
-    min-width: 528px;
+    width: 95%;
     min-height: 521px;
     background-color: #fff;
 
@@ -30,7 +31,7 @@
     transform: translate(-50%, -50%);
 
     min-height: 581px;
-    min-width: 528px;
+    max-width: 528px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -122,8 +123,14 @@
     color: var(--secondary-text-color);
 }
 
+.input__list {
+    width: 100%;
+}
+
+
 .input__group {
     position: relative;
+    width: 100%;
 
 }
 
@@ -180,9 +187,9 @@
     display: flex;
 
     &>use {
-            justify-content: center;
-            align-items: center;
-        }
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -201,25 +208,25 @@
     clip-path: inset(60%);
     margin: -1px;
 
-        &:checked+.checkbox__fake {
-            background-color: var(--accent-color);
-            border: 3px;
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 4px;
-            width: 16px;
-            height: 15px;
-        }
-    
-        &:checked+.checkbox__fake>svg {
-            opacity: 1;
-        }
-    
-        &:focus+.checkbox__fake,
-        &:hover+.checkbox__fake {
-            background-color: #fff;
-            border: 2px solid var(--accent-color);
-            box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-        }
+    &:checked+.checkbox__fake {
+        background-color: var(--accent-color);
+        border: 3px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        width: 16px;
+        height: 15px;
+    }
+
+    &:checked+.checkbox__fake>svg {
+        opacity: 1;
+    }
+
+    &:focus+.checkbox__fake,
+    &:hover+.checkbox__fake {
+        background-color: #fff;
+        border: 2px solid var(--accent-color);
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    }
 }
 
 .checkbox__label {
@@ -245,9 +252,7 @@
     margin-right: 7px;
 
     &>svg {
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
 }
-
-

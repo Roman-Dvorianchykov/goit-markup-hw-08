@@ -63,6 +63,12 @@
         margin: 0;
     }
 
+    @media screen and (max-width: $smartphone) {
+
+        & :not(:last-child) {
+            margin: 0;
+        }
+    }
 
     @media screen and (max-width: $tablet) {
         margin: 0 auto 30px;
@@ -80,7 +86,8 @@
         }
     }
 
-    & img {
+    &>picture>img {
+        width: 100%;
 
         @media screen and (max-width: $smartphone) {
             margin: 0 auto;
@@ -148,3 +155,10 @@
         fill: #ffffff;
     }
 }
+
+// .team-list {
+//     &__img {
+//         width: 450px;
+//         height: 460px;
+//     }
+// }
