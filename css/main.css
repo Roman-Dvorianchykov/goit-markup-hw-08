@@ -669,6 +669,12 @@ summary {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .socials__link.menu {
   color: var(--accent-color);
   background-color: #fff;
@@ -722,15 +728,43 @@ summary {
 }
 
 .hero.section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: url("../images/hero-bg.jpg");
+  padding: 118px 0;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-  max-height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/hero-mobile.jpg");
+  max-height: 400px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero.section .hero.section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/hero-mobile@2x.jpg");
+  }
 }
 
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .hero.section {
+    padding: 118px 0;
+    max-height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/hero-tablet.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .hero.section {
+    background-image: url("../images/hero-bg/hero-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero.section {
+    padding: 200px 0;
+    max-height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg/hero-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero.section {
+    background-image: url("../images/hero-bg/hero-desktop@2x.jpg");
+  }
+}
 .hero__padding {
   padding-bottom: 0;
   padding-top: 0;
@@ -1260,7 +1294,7 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .footer__logo-n-adress {
-    width: 100%;
+    flex-shrink: 0;
     display: block;
   }
 }

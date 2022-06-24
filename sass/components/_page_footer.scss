@@ -130,10 +130,11 @@
     @media screen and (max-width: $desktop) {
         margin: 0 15px 15px 0;
 
+
     }
 
     @media screen and (min-width: $desktop) {
-        width: 100%;
+        flex-shrink: 0;
         display: block;
     }
 }

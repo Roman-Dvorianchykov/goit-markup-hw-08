@@ -286,6 +286,15 @@
     }
 }
 
+
+.site-nav {
+
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+
+
 .socials__link.menu {
     color: var(--accent-color);
     background-color: #fff;
