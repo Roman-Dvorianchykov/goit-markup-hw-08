@@ -953,13 +953,17 @@ summary {
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
-  min-height: 75px;
   min-width: 270px;
   margin-top: 10px;
 }
-@media screen and (max-height: 768px) {
+@media screen and (max-width: 768px) {
   .section-text {
     min-height: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-text.clock {
+    min-height: 75px;
   }
 }
 
