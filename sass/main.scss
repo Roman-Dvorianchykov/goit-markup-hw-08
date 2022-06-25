@@ -37,6 +37,12 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
     margin: auto;
+
+    @media screen and (max-width: $desktop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
 }
 
 h2,

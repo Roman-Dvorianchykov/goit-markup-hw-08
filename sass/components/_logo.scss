@@ -10,15 +10,27 @@
     margin-right: 35px;
     padding-top: 24px;
     padding-bottom: 25px;
-    
+
     display: flex;
+
+    &.header_logo {
+
+        @media screen and(min-width: $desktop) {
+            margin-right: 68px;
+        }
+
+        @media screen and(min-width: $tablet) {
+            margin-right: 63px;
+        }
+    }
+
 }
-    
-    
 
 
-    // @media screen and (min-width:$tablet){
-    //     display: flex;
+
+
+// @media screen and (min-width:$tablet){
+//     display: flex;
 
 
 

@@ -530,6 +530,11 @@ summary {
   margin-bottom: 64px;
   margin-left: 0;
 }
+@media screen and (max-width: 1200px) {
+  .header-link {
+    font-size: 12px;
+  }
+}
 
 .auth-nav__link.tel--menu {
   color: var(--accent-color);
@@ -538,6 +543,11 @@ summary {
   letter-spacing: 0.02em;
   margin-left: 0;
   margin-top: auto;
+}
+@media screen and (max-width: 460px) {
+  .auth-nav__link.tel--menu {
+    font-size: 28px;
+  }
 }
 
 .auth-nav__link.mailto--menu {
@@ -627,6 +637,20 @@ summary {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 1200px) {
+  .icon.mailto {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .icon.smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .menu-container {
   display: none;
   background-color: #FFF;
@@ -639,8 +663,8 @@ summary {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 700px;
+  width: 100vw;
+  height: 100vh;
   color: var(--primary-text-color);
 }
 .menu-container.is-open {
@@ -718,6 +742,16 @@ summary {
   padding-bottom: 25px;
   display: flex;
 }
+@media screen and (min-width: 1200px) {
+  .logo.header_logo {
+    margin-right: 68px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo.header_logo {
+    margin-right: 63px;
+  }
+}
 
 .logo-accent {
   color: var(--primary-text-color);
@@ -793,6 +827,12 @@ summary {
     padding: 0;
     font-size: 26px;
     line-height: 1.62;
+    margin: 0 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__title {
+    margin: 0 20px;
   }
 }
 
@@ -879,9 +919,6 @@ summary {
   .features__item:nth-child(2n) {
     margin-right: 0;
   }
-  .features__item:nth-last-child(-n+2) {
-    margin-bottom: 0;
-  }
 }
 
 .features__title {
@@ -919,6 +956,11 @@ summary {
   min-height: 75px;
   min-width: 270px;
   margin-top: 10px;
+}
+@media screen and (max-height: 768px) {
+  .section-text {
+    min-height: 0;
+  }
 }
 
 .device__list {
@@ -994,6 +1036,12 @@ summary {
   margin: 0;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1200px) {
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
 
 .invisible-title {
   color: #ffffff;
@@ -1010,11 +1058,6 @@ summary {
 }
 .our-team__card :last-child {
   margin: 0;
-}
-@media screen and (max-width: 480px) {
-  .our-team__card :not(:last-child) {
-    margin: 0;
-  }
 }
 @media screen and (max-width: 768px) {
   .our-team__card {
@@ -1092,6 +1135,14 @@ summary {
 .socials__link:hover svg, .socials__link:focus svg {
   fill: #ffffff;
 }
+@media screen and (max-width: 500px) {
+  .socials__link {
+    margin: 0;
+  }
+}
+.socials__link.footer {
+  margin: 0 5px;
+}
 
 .regular-clients__list {
   display: flex;
@@ -1138,7 +1189,7 @@ summary {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .regular-clients__item {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     margin-right: 15px;
     width: calc((100% - 60px) / 3);
   }
@@ -1152,7 +1203,7 @@ summary {
 @media screen and (max-width: 768px) {
   .regular-clients__item {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     margin-right: 15px;
     width: calc((100% - 30px) / 2);
   }
@@ -1185,18 +1236,20 @@ summary {
 .footer.container {
   display: flex;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer.container {
     flex-direction: column;
     margin: 0;
     width: 100%;
+    align-items: center;
+    margin: 0 auto;
   }
   .footer.container div:not(:last-child) {
     margin: 0 auto 60px;
     display: block;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer.container {
     flex-wrap: wrap;
     align-items: center;
@@ -1234,14 +1287,14 @@ summary {
   margin-bottom: 20px;
   margin-right: 0px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer__logo.logo {
     display: flex;
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .contacts__list {
     display: flex;
     flex-direction: column;
@@ -1368,6 +1421,9 @@ summary {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 }
+.socials__link.footer > svg {
+  fill: #ffffff;
+}
 
 .socials__link:hover,
 .socials__link:focus {
@@ -1453,6 +1509,7 @@ summary {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 4;
 }
 
 .backdrop.is-hidden {
@@ -1463,10 +1520,9 @@ summary {
 
 .modal {
   position: absolute;
-  z-index: 10;
   display: flexbox;
   width: 95%;
-  min-height: 521px;
+  min-height: 581px;
   background-color: #fff;
   top: 50%;
   left: 50%;
@@ -1477,6 +1533,12 @@ summary {
   border-radius: 4px;
   padding: 40px;
   justify-content: column;
+}
+@media screen and (max-width: 1200px) {
+  .modal {
+    max-width: 450px;
+    height: 609px;
+  }
 }
 
 .modal__close-button {
@@ -1614,6 +1676,11 @@ summary {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  .modal__icon.checkmark {
+    left: 10px;
+  }
+}
 
 /* спрятать оригинальный чек */
 .checkbox__field {
@@ -1652,6 +1719,12 @@ summary {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (max-width: 1200px) {
+  .checkbox__label {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .checkbox__fake {
@@ -1701,7 +1774,7 @@ summary {
   margin-bottom: 50px;
   padding-left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .our-works-button__list {
     display: flex;
     align-items: center;
@@ -1887,6 +1960,12 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
   margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 h2,
